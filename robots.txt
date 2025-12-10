@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /assets/
+Allow: /static/
+
+Disallow: /.git/
+Disallow: /.env
+
+Sitemap: https://gt-game-trip.com/sitemap.xml
