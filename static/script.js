@@ -21,6 +21,39 @@ function initLoader() {
     }
 }
 
+// Mobile menu toggle
+function toggleMobileMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    
+    navLinks.classList.toggle('mobile-active');
+    mobileMenuBtn.classList.toggle('active');
+}
+
+// Smooth scroll for navigation links
+document.addEventListener('DOMContentLoaded', () => {
+    initLoader();
+    
+    // Add smooth scroll to all nav links
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+                
+                // Close mobile menu if open
+                const navLinks = document.querySelector('.nav-links');
+                if (navLinks.classList.contains('mobile-active')) {
+                    toggleMobileMenu();
+                }
+            }
+        });
+    });
+});
+
 // Initialize on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
     initLoader();

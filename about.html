@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GT | Game & Trip - احنا مين؟ تعرف على رؤيتنا ورسالتنا">
+    <meta name="keywords" content="GT, Game Trip, عن الشركة, رحلات سياحية">
+    
+    <title>احنا مين - GT | Game & Trip 🚀</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1a1a2e">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>جاري التحميل...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="/assets/images/logo.png" alt="GT Logo" class="logo-img">
+            </div>
+            <div class="nav-links">
+                <a href="/">الرئيسية</a>
+                <a href="/about.html">احنا مين</a>
+                <a href="/services.html">خدماتنا</a>
+                <a href="/#trips">الرحلات</a>
+                <a href="/#gallery">معرض الصور</a>
+                <a href="/#testimonials">آراء العملاء</a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>احنا مين؟</h1>
+            <p>نحن GT | Game & Trip - منصة سياحية متخصصة في تنظيم رحلات مميزة لأجيال الشباب والعائلات</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <!-- Our Story -->
+            <div class="about-section">
+                <h2>قصتنا</h2>
+                <p>بدأنا رحلتنا برؤية واضحة: جعل السياحة المصرية أكثر متعة وإثارة للشباب. اكتشفنا أن هناك فجوة بين الرحلات التقليدية والتجارب الحديثة التي يبحث عنها شباب اليوم.</p>
+                <p>فقررنا أن نكون الجسر الذي يربط بين الوجهات السياحية الرائعة وتطلعات الأجيال الجديدة، بطريقة مبتكرة وممتعة.</p>
+            </div>
+
+            <!-- Our Vision -->
+            <div class="about-section">
+                <h2>رؤيتنا</h2>
+                <p>أن نكون المنصة الأولى والأفضل للرحلات السياحية الشبابية في الشرق الأوسط، حيث المتعة تلتقي بالأمان والجودة.</p>
+            </div>
+
+            <!-- Our Mission -->
+            <div class="about-section">
+                <h2>مهمتنا</h2>
+                <p>توفير تجارب سياحية فريدة وآمنة وبأسعار مناسبة، مع ضمان أعلى معايير الخدمة والاحترافية في كل رحلة.</p>
+            </div>
+
+            <!-- Our Values -->
+            <div class="about-values">
+                <h2>قيمنا الأساسية</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🎯</div>
+                        <h3>الاحترافية</h3>
+                        <p>نعمل بدقة واحترافية عالية في كل التفاصيل</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">💡</div>
+                        <h3>الابتكار</h3>
+                        <p>نبتكر تجارب جديدة وفريدة كل مرة</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🤝</div>
+                        <h3>الموثوقية</h3>
+                        <p>علاقتنا مع عملائنا مبنية على الثقة</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">😊</div>
+                        <h3>رضا العميل</h3>
+                        <p>سعادتك هي أولويتنا الأولى</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div class="about-section">
+                <h2>ليه تختار GT؟</h2>
+                <div class="reasons-list">
+                    <div class="reason-item">
+                        <span class="reason-number">1</span>
+                        <div>
+                            <h4>رحلات مخطط لها بعناية</h4>
+                            <p>كل تفصيلة مدروسة لضمان أفضل تجربة ممكنة</p>
+                        </div>
+                    </div>
+                    <div class="reason-item">
+                        <span class="reason-number">2</span>
+                        <div>
+                            <h4>فريق محترف وودود</h4>
+                            <p>فريقنا متدرب وجاهز لخدمتك 24/7</p>
+                        </div>
+                    </div>
+                    <div class="reason-item">
+                        <span class="reason-number">3</span>
+                        <div>
+                            <h4>أسعار تنافسية وشفافة</h4>
+                            <p>لا توجد تكاليف مخفية، فقط أسعار عادلة</p>
+                        </div>
+                    </div>
+                    <div class="reason-item">
+                        <span class="reason-number">4</span>
+                        <div>
+                            <h4>تجارب لا تُنسى</h4>
+                            <p>ذكريات جميلة تستحق كل لحظة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>جاهز تبدأ معنا؟</h2>
+            <p>احجز رحلتك الأولى الآن وكن جزء من عائلة GT</p>
+            <a href="/#trips" class="cta-btn">استكشف الرحلات</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 GT | Game & Trip. جميع الحقوق محفوظة.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/Gt.game.trip" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.7 10h-2.6v7h-3v-7H8V9h2.1V7.3c0-1.77.84-2.8 2.8-2.8.79 0 1.47.06 1.87.08v2.2h-1.3c-1 0-1.2.48-1.2 1.18V9h2.4l-.3 3z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/Gt.game.trip" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.057-1.645.069-4.849.069-3.204 0-3.584-.012-4.849-.069-3.259-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@gt.game.trip" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.66 1.94 2.89 2.89 0 0 1 5.66-1.94V9.67a4.83 4.83 0 0 0-6.61 4.48 4.83 4.83 0 0 0 9.58.32V7.64a6.48 6.48 0 0 0 5.76 2.87v-3.6a4.82 4.82 0 0 1-.23-.14z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <p class="designer-credit">تصميم وتطوير: السيد الحداد #تاج_اتش_تي_ام_ال</p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
