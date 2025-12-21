@@ -12,6 +12,8 @@
     
     <title>GT | Game & Trip 🚀 - العبها صح… وسافر ✈️</title>
     <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#1a1a2e">
 </head>
@@ -53,7 +55,7 @@
             <div class="banner-overlay">
                 <div class="banner-content">
                     <h1 class="banner-title">العبها صح… وسافر ✈️</h1>
-                    <p class="banner-subtitle">رحلات مميزة لأجيال الشباب</p>
+                    <p class="banner-subtitle">هنغير مفهوم السياحة في مصر</p>
                 </div>
             </div>
         </div>
@@ -127,7 +129,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>رحلاتنا القادمة</h2>
-                <p>احجز مقعدك الآن في أحدث رحلاتنا</p>
+                <p>احجز مكانك الآن في أحدث رحلاتنا</p>
             </div>
             <div class="upcoming-grid">
                 <div class="upcoming-card">
@@ -218,43 +220,42 @@
                 <h2>معرض الصور</h2>
                 <p>شوف أجمل اللحظات من رحلاتنا السابقة</p>
             </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=700&h=700&fit=crop&q=80" alt="رحلة القاهرة">
-                    <div class="gallery-overlay">
-                        <h4>رحلة القاهرة</h4>
+            <div class="swiper gallery-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="./assets/images/carousel/1.jpeg" alt="القاهرة">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="./assets/images/carousel/2.jpeg" alt="الأقصر">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="./assets/images/carousel/3.JPG" alt="شرم الشيخ">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="./assets/images/carousel/4.jpg" alt="أسوان">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="./assets/images/carousel/5.jpg" alt="دهب">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="./assets/images/carousel/6.jpg" alt="سيوة">
+                        </div>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1580541831066-7a1c00f14cbf?w=700&h=700&fit=crop&q=80" alt="رحلة الأقصر">
-                    <div class="gallery-overlay">
-                        <h4>رحلة الأقصر</h4>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&h=700&fit=crop&q=80" alt="رحلة شرم الشيخ">
-                    <div class="gallery-overlay">
-                        <h4>رحلة شرم الشيخ</h4>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1507642822177-9e7302e112e8?w=700&h=700&fit=crop&q=80" alt="رحلة أسوان">
-                    <div class="gallery-overlay">
-                        <h4>رحلة أسوان</h4>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1582075226690-86d1bead9e5d?w=700&h=700&fit=crop&q=80" alt="رحلة دهب">
-                    <div class="gallery-overlay">
-                        <h4>رحلة دهب</h4>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&h=700&fit=crop&q=80" alt="رحلة سيوة">
-                    <div class="gallery-overlay">
-                        <h4>رحلة سيوة</h4>
-                    </div>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -264,23 +265,23 @@
         <div class="container">
             <div class="section-header">
                 <h2>آراء العملاء</h2>
-                <p>شنو يقول الناس عن تجاربهم معنا</p>
+                <p>الناس بتقول ايه في GT؟</p>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"تجربة ما تُنسى! الرحلة كانت منظمة والذكريات اللي عملناها لا تُقدر بثمن"</p>
-                    <h4>أحمد محمد</h4>
+                    <p>"سيوة معاهم شكلها مختلف خالص من أحلى الرحلات بصراحة، تنظيم مظبوط والناس هناك متعاونه جدًا تجربة تستاهل وهتتكرر تاني اكيد 🫶🏻💗"</p>
+                    <h4>Asel Yousry</h4>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"GT غيرت طريقة تفكيري في السفر. أفضل رحلة قمت بيها!"</p>
-                    <h4>سارة علي</h4>
+                    <p>"بصراحه من احسن الشركات في التعامل ❤️"</p>
+                    <h4>Veronica Maher</h4>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"فريق احترافي وبرنامج ممتع. ما في أحسن من كده!"</p>
-                    <h4>محمود حسن</h4>
+                    <p>"من احسن الشركات الي اتعاملت معاهم ❤️❤️❤️❤️"</p>
+                    <h4>Shahd Ramdan</h4>
                 </div>
             </div>
         </div>
@@ -357,5 +358,58 @@
     </a>
 
     <script src="/static/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        // Initialize Gallery Carousel with 3D Effect
+        const gallerySwiper = new Swiper('.gallery-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 40,
+            loop: true,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 25,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                }
+            },
+            centeredSlides: true,
+            effect: 'coverflow',
+            coverflowEffect: {
+                rotate: 45,
+                stretch: 50,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            speed: 800,
+        });
+
+        // Add 3D Perspective Effect
+        document.addEventListener('DOMContentLoaded', () => {
+            const gallery = document.querySelector('.gallery-swiper');
+            if (gallery) {
+                gallery.style.perspective = '1200px';
+                gallery.parentElement.style.perspectiveOrigin = 'center';
+            }
+        });
+    </script>
 </body>
 </html>
