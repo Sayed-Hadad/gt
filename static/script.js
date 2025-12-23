@@ -30,33 +30,34 @@ function toggleMobileMenu() {
     mobileMenuBtn.classList.toggle('active');
 }
 
-// Smooth scroll for navigation links
+// Smooth scroll for navigation links (only for same-page sections)
 document.addEventListener('DOMContentLoaded', () => {
     initLoader();
-    
-    // Add smooth scroll to all nav links
+
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            if (targetSection) {
-                targetSection.scrollIntoView({ behavior: 'smooth' });
-                
+            const href = link.getAttribute('href');
+            const isHashOnly = href && href.startsWith('#');
+            const url = href ? new URL(href, window.location.origin) : null;
+            const isSamePageHash = url && url.hash && url.pathname === window.location.pathname;
+
+            if (isHashOnly || isSamePageHash) {
+                e.preventDefault();
+                const targetId = isHashOnly ? href : url.hash;
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+
                 // Close mobile menu if open
                 const navLinks = document.querySelector('.nav-links');
                 if (navLinks.classList.contains('mobile-active')) {
                     toggleMobileMenu();
                 }
             }
+            // Otherwise allow normal navigation (about/services pages)
         });
     });
-});
-
-// Initialize on DOM ready
-document.addEventListener('DOMContentLoaded', () => {
-    initLoader();
 });
 
 // Service Worker registration
